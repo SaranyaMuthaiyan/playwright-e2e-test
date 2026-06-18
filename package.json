@@ -1,0 +1,15 @@
+{
+  "name": "playwright-e2e-test",
+  "version": "1.0.0",
+  "description": "Playwright E2E Tests with AI capabilitites incl MCP",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": ["playwright", "playwright-e2e-tests", "playwright-mcp"],
+  "author": "Saranya Muthaiayan",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^25.9.3"
+  }
+}
