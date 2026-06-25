@@ -6,9 +6,11 @@ test.describe("Login functionality", () => {
         await page.goto("https://katalon-demo-cura.herokuapp.com/");
         await expect(page).toHaveTitle("CURA Healthcare Service") ; 
         await expect(page.locator("//h1")).toHaveText("CURA Healthcare Service"); 
+//2.Click on the Make Appoinment
+await page.getByRole("link", { name:"Make Appointment" }).click();
+await expect(page.getByText("Please login to make")).toBeVisible();
 });
 
-//2.Click on the Make Appoinment
 test("test should login successfully", async({page}) => {
 //Successfull login 
  await page.getByLabel("Username").fill("John Doe");
